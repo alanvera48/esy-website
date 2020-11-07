@@ -944,12 +944,26 @@ h2{
 }
 
 .sub-about{		
-	font-size: 20px;
-	margin: 5px auto 5px auto;		
+	font-size: 15px;
+	margin: 10px auto 3px auto;		
 }
 
 .nosotros{
 	font-size: 10px;
+}
+
+
+.fa-truck{
+	font-size: 30px;
+	margin: 5px;
+	
+}
+
+
+.sub-icon{
+	font-size: 10px;
+	margin:5px;
+	
 }
 
 .text-ct{
@@ -1057,14 +1071,17 @@ form button{
 	font-size: 10px;
 
 }
-
+ #services{
+ 	height: 900px;
+ }
+	
  #services div{
- 	padding: 8px;
+ 	padding: 2px;
  }
 
  #services div > img{
- 	width: 100px;
- 	height: 100px;
+ 	width: 70px;
+ 	height: 70px;
  	border-radius: 50%;
  }
 
@@ -1075,14 +1092,14 @@ form button{
 
 
   #services div {
-  	width: 250px;
+  	width: 200px;
   	height: 200px;
   	margin-bottom: 20px; 
 
   }
 
   #services div > p {
-  	font-size: 12px;
+  	font-size: 10px;
   	
   }
 
