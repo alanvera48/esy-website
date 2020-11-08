@@ -15,8 +15,6 @@ html{
 	scroll-behavior: smooth;
 }
 
-body{
-}
 
 li{
 	list-style: none;
@@ -850,81 +848,11 @@ footer{
 	
 }	
 
-@media screen and (max-width: 500px){
-
-.about{
-	padding: 0 15px ;
-
-}
-
-.sub-about{		
-	font-size: 30px;
-	margin: 10px auto 10px auto;		
-}
-
-.nosotros{
-	font-size: 15px;
-}
-
-
-.fa-truck{
-	font-size: 40px;	
-}
-
-
-.sub-icon{
-	font-size: 12px;
-}
-
-form button{
-	width: 400px;
-	height: 20px;
-	font-size: 15px;
-}
-
-
-.fot-ab{
-	padding: 10px;
-	width:100%;
-}
-
-.fot-ab	> p {
-	font-size:15px;
-	margin: 8px 0;
-}
-
-
-.nav-foot {
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	
-}
-
-.nav-foot  ul {
-	display: flex;
-	flex-direction: row;
-}
-
-.nav-foot > span{
-	font-size: 18px;
-}
-
-.nav-foot > ul li {
-	font-size: 12px;
-	padding: 1px;
-	margin: 2px;
-}
-.nav-foot > ul li a{
-	font-size: 10px
-
-}
-
-
-}	
-
 
 @media screen and (max-width: 400px){
+
+body{display:none
+	}
 
 h5{
 	font-size: 12px;
@@ -1102,10 +1030,6 @@ form button{
   	font-size: 10px;
   	
   }
-
-
-
- 
 
   }
 
