@@ -31,7 +31,7 @@ p{
 	width: 100%;
 	display: grid;
 	grid-gap: 0px;
-	grid-template-columns: repeat(3,1fr);
+	/* grid-template-columns: repeat(3,1fr); */
 	grid-template-rows: repeat(9, auto);
 }
 
@@ -40,7 +40,7 @@ header{
 	width: 100%;
 	height: 650px; 
 	background: url('FREIGHTLINER.jpg');
-	/* background-attachment: fixed; */
+	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -63,8 +63,6 @@ header::after{
    	height:100%;
   	z-index: -1;
   	background: rgba(0, 0, 0, 0.72);
-	/* background: rgb(0,0,0);
-	background: linear-gradient(7deg, rgba(0,0,0,0.68) 39%, rgba(255,161,0,0.3196953781512605) 73%, rgba(196,196,196,1) 100%); */
 }
 
 #title{
@@ -177,19 +175,16 @@ nav ul{
 	justify-content: space-around;
 	align-items: center;
 	margin: 0 80px;
+	font-size: 14px;
 }
 
 .ul-nav1 li{	
-	width: 100px;
-	height: 40px;
-	padding: 5px;
-
-		
+	padding: 5px;	
 }
+
 
 li a{
 	margin: 0 30px;
-	font-weight: 100;
 	text-decoration: none;
 	color: #FFFFFF;
 	transition: ease-in-out 0.1s;
@@ -233,7 +228,7 @@ li a{
 
 
 .fa-truck{
-	font-size: 80px;
+	font-size: 70px;
 	color: #9B9D9E;
 	margin: 10px;
 	
@@ -243,8 +238,7 @@ li a{
 .sub-icon{
 	text-align: center;
 	color: #6D6A6A;
-	font-size: 20px;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 17px;
 	margin: 10px;
 	
 }
@@ -259,6 +253,7 @@ li a{
 	grid-row: span 1;
 	grid-column: span 3;
 	height: 650px;
+	padding: 40px;
 	background:url('backlog.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
@@ -266,11 +261,12 @@ li a{
 	background-attachment: fixed; 
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	position: relative;
 	z-index: 0;
 	color: #B6B6B6;
+
   }
 
 #services::after{  
@@ -282,31 +278,47 @@ li a{
 	width:100%;
    	height:100%;
   	z-index: -1;
-  	background: rgba(0, 0, 0, 0.72);
+  	background: rgba(0, 0, 0, 0.50);
   }
 
 
  #services div{
- 	width: 400px;
- 	height: 500px;
- 	margin: 0 10px;
- 	padding: 10px;
- 	/* background: rgba(7,10,16, 0.8);
- 	border: 15px solid rgba(174, 172, 172, 0.2); */
+ 	width: 300px;
+ 	height: 400px;
+ 	position: relative;
+	z-index: 0;
+	overflow: hidden;
+ }
+
+.pack1{
+	background: url('truck-driver.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+ 	box-shadow: 2px 2px 2px 1px rgba(197, 193, 193, 0.2); 
+}
+
+
+ .boxer{
+ 	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	content: "";
+	position: absolute;
+	z-index: 1;
  	display: flex;
  	flex-direction: column;
  	justify-content: center;
 	align-items: center ;
-	transition: ease-out 0.5s;
+	color: white;
+	background: rgba(234, 187, 73, 0.5);
+	transform: translateY(100%);
+	transition: ease-out 1s;
+
  }
 
- #services div > img{
- 	width: 250px;
- 	height: 250px;
- 	border-radius: 50%;
- 	filter: brightness(70%);
- 	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8); 
- }
+
 
 .safe{
 	margin-bottom: 25px;
@@ -320,16 +332,14 @@ li a{
   	font-size: 18px;
   	font-weight: bold;
   	text-align: center;
-  	margin-bottom: 20px;
+  	margin-bottom: 10px;
   }
 
 
 
- #services div:hover{
- 		border: 12px solid rgba(174, 172, 172, 0.4);
- 		background: rgba(7,10,16, 1);
- 		box-shadow: 2px 2px 2px 1px rgba(197, 193, 193, 0.2); 
- }
+#services div:hover .boxer{
+	transform: translateY(0%);
+}
 
 
 /* Contact */
@@ -474,7 +484,7 @@ footer{
 }	
 
 .fot-ab{
-	width:400px;
+	width:500px;
 }
 
 .fot-ab	> p {
@@ -571,7 +581,7 @@ footer{
 	grid-row: span 1;
 	grid-column: span 3;
 	height: 80px;
-	background: rgba(0, 0, 0, 0.95);
+	background: rgba(0, 0, 0, 0.90);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -579,8 +589,7 @@ footer{
 	text-align: center;
 }
 
-.sub-footer > span , div{
-	font-family: 'Source Sans Pro', sans-serif;
+.sub-footer > span ,.sub-footer >  div{
 	color: #C6BFB5;
 	font-size: 12px;
 	letter-spacing: 3px;
@@ -767,7 +776,7 @@ form button{
 		background: rgba(0, 0, 0, 0.7);
 		margin: 0;
 		width: 120px;	
-		height: 100vh;
+		height: 90vh;
 		top:60px;
 
 		left: 0;

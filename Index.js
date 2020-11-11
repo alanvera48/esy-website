@@ -23,7 +23,7 @@ function scrollMostrar(){
 	for (i = 0; i < animado.length; i++ ) {
 		let alturanimado = animado[i].offsetTop; 
 
-	if (alturanimado - 200 < scrollTop ) {
+	if (alturanimado - 400 < scrollTop ) {
 		animado[i].style.opacity = 1;
 
 	}
