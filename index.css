@@ -924,7 +924,9 @@ form button{
 }	
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 480px ){
+
+
 
 h5{
 	font-size: 12px;
@@ -951,6 +953,25 @@ h2{
 .nosotros{
 	font-size: 10px;
 }
+
+
+.fa-truck{
+	font-size: 80px;
+	color: #9B9D9E;
+	margin: 10px;
+	
+}
+
+
+.sub-icon{
+	text-align: center;
+	color: #6D6A6A;
+	font-size: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 10px;
+	
+}
+
 
 .text-ct{
   	width: 90%;
@@ -1086,11 +1107,8 @@ form button{
   	
   }
 
+   }
 
-
- 
-
-  }
 
 
 .nav_1{
