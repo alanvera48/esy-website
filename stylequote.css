@@ -1,0 +1,43 @@
+#hed-con{
+	width: 100%;
+	height: 60px; 
+	background: ;
+	grid-column: span 3;
+	grid-row: span 1;
+	position: relative;
+	z-index: 1;
+	text-align: center;	
+	
+}
+
+.quote{  
+	grid-row: span 1;
+	grid-column: span 3;
+	height: 650px;
+	background: url('backlog.jpg');	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+	color: #FFFFFF;
+
+  
+}
+
+
+.quote::after{  
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width:100%;
+   	height:100%;
+  	z-index: -1;
+  	background: rgba(0, 0, 0, 0.70);
+  }

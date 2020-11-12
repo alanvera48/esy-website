@@ -23,7 +23,7 @@ function scrollMostrar(){
 	for (i = 0; i < animado.length; i++ ) {
 		let alturanimado = animado[i].offsetTop; 
 
-	if (alturanimado - 400 < scrollTop ) {
+	if (alturanimado - 700 < scrollTop ) {
 		animado[i].style.opacity = 1;
 
 	}
@@ -32,3 +32,13 @@ function scrollMostrar(){
 
 
 window.addEventListener("scroll", scrollMostrar);
+
+send = document.getElementById('send');
+mensage = document.getElementById('mensage');
+close = document.getElementById('btn-cerrar');
+
+send.onclick = ()=>{
+	mensage.style.display = ('block');
+
+	
+}

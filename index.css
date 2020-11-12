@@ -31,7 +31,6 @@ p{
 	width: 100%;
 	display: grid;
 	grid-gap: 0px;
-	/* grid-template-columns: repeat(3,1fr); */
 	grid-template-rows: repeat(9, auto);
 }
 
@@ -40,7 +39,6 @@ header{
 	width: 100%;
 	height: 650px; 
 	background: url('FREIGHTLINER.jpg');
-	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -68,9 +66,9 @@ header::after{
 #title{
 	width: 900px;
 	min-width: 300px;
-	height: 150px;
+	height: 400px;
 	position: absolute;
-	top: 40%;
+	top: 20%;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -93,12 +91,38 @@ h1{
 }
 
 
-h5{
+.titile-2{
 	font-size: 20px;
 	font-family: 'Source Sans Pro', sans-serif;
 	letter-spacing: 5px;
     color: #FFFFFF; 
 }
+
+.get-bot{	
+	margin-top: 20px;
+	width: 200px;
+	height: 40px;
+	background: #eabb49;
+	border-radius: 20px;
+	transition: ease-in 0.5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	cursor: pointer
+}
+
+
+.get-bot a{
+	color: #ffff;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.get-bot:hover{
+	background: #C6BFB5;
+}
+
 
 #line2{
 	animation: line 1.5s ;
@@ -254,7 +278,7 @@ li a{
 	grid-column: span 3;
 	height: 650px;
 	padding: 40px;
-	background:url('backlog.jpg');
+	background:url('riverside.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -267,6 +291,7 @@ li a{
 	z-index: 0;
 	color: #B6B6B6;
 
+
   }
 
 #services::after{  
@@ -278,25 +303,46 @@ li a{
 	width:100%;
    	height:100%;
   	z-index: -1;
-  	background: rgba(0, 0, 0, 0.50);
+  	background: rgba(0, 0, 0, 0.70);
   }
 
 
- #services div{
- 	width: 300px;
- 	height: 400px;
+ #services > div{
+ 	width: 350px;
+ 	height: 380px;
  	position: relative;
 	z-index: 0;
 	overflow: hidden;
+	border: 2px solid rgba(234, 187, 73, 0.5);
  }
 
 .pack1{
+	background: url('focus-.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+ 	box-shadow: 2px 2px 2px 1px rgba(197, 193, 193, 0.2); 
+ 	clip-path: polygon(49% 0, 100% 23%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 25%);
+}
+
+.pack2{
 	background: url('truck-driver.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
  	box-shadow: 2px 2px 2px 1px rgba(197, 193, 193, 0.2); 
+ 	clip-path: polygon(49% 0, 100% 23%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 25%);
+
 }
+
+.pack3{
+	background: url('freight-2.jpg');
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
+ 	box-shadow: 2px 2px 2px 1px rgba(197, 193, 193, 0.2); 
+ 	clip-path: polygon(49% 0, 100% 23%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 25%);
+   }
 
 
  .boxer{
@@ -311,35 +357,39 @@ li a{
  	flex-direction: column;
  	justify-content: center;
 	align-items: center ;
+	padding: 0 10px;
 	color: white;
-	background: rgba(234, 187, 73, 0.5);
-	transform: translateY(100%);
+	background: rgba(11, 11, 11, 0.8);	
+	transform: translateY(80%);
 	transition: ease-out 1s;
-
  }
 
 
 
 .safe{
-	margin-bottom: 25px;
+	margin-bottom: 100px;
 	color: #eabb49; 
 	font-size: 20px;
 	font-family: 'Raleway', sans-serif;
 }
 
-
-  #services div > p {
-  	font-size: 18px;
-  	font-weight: bold;
-  	text-align: center;
-  	margin-bottom: 10px;
-  }
-
+.boxer-p{
+	font-size: 15px;
+	color: #FFFFFF;
+	margin-bottom: 150px;
+	text-align: center;
+	font-weight: bold;
+}
 
 
 #services div:hover .boxer{
 	transform: translateY(0%);
 }
+
+#services div:active .boxer{
+	transform: translateY(0%);
+}
+
 
 
 /* Contact */
@@ -447,12 +497,66 @@ form button{
 	border:  none;
 	cursor: pointer;
 	font-family: 'Lato', sans-serif;
-	font-size: 1.25vw;
+	font-size: 20px;
 }
 
 button:hover{
 	background: #C6BFB5;
 }
+
+
+
+/* Mensage */
+
+.mensage{
+	position: fixed;
+	background: rgba(0, 0, 0, 0.3);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
+	transition: ease-out 2s;
+  }
+
+.popup{
+	background: rgba(7,10,16, 1);
+	box-shadow: 0px 0 5px 0 rgba(0, 0, 0, 0.8);
+	width: 500px;
+	height: 350px;
+	padding: 20px;
+	text-align: center;
+}
+
+
+.popup .btn-cerrar{
+	font-size: 16px;
+	text-align: right;
+	line-height: 16px;
+	color: #817474;
+	display: block;
+	transition: 1s ease;
+}
+
+.popup .btn-cerrar:hover{
+	color: #FFFFFF;
+}
+
+
+.men-te{
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+
 
 /* Map */
 
@@ -604,7 +708,47 @@ footer{
 }
 
 
+@media screen and (max-width: 1200px){
 
+
+#services{  
+	padding: 60px;
+	
+  }
+  .safe{
+	margin-bottom: 80px;
+	
+}
+
+  .text-ct{
+  	width: 	400px;
+  	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	margin: 80px 0 80px 30px;
+
+  }
+
+
+form {
+ 	width:700px;	
+  }
+
+.label2{
+	margin: 0 20px 0 0;
+}
+
+ label input{
+ 	width: 340px;
+ }
+
+.textte{
+	width: 700px;
+}
+
+	
+}	
 
 
 
@@ -650,7 +794,7 @@ h2{
 }
 
 .nosotros{
-	font-size: 15px;
+	font-size: 18px;
 }
 
 
@@ -673,34 +817,23 @@ h2{
  #services div{
  	width: 200px;
  	height: 200px;
- 	margin: 10px 0 ;
- 	padding: 10px;
  }
 
- #services div > img{
- 	width: 100px;
- 	height: 200px;
- 	border-radius: 50%;
- }
 
 .safe{
-	margin-bottom: 15px; 
+	margin-bottom: 15px;
 	font-size: 15px;
+
+}
+
+.boxer-p{
+	font-size: 12px;
+	margin-bottom: 10px;
+	margin-top: 50px;
+	
 }
 
 
-  #services div > p {
-  	font-size: 12px;
-  	margin-bottom: 10px;
-  }
-
-
-
- #services div:hover{
- 		border: none;
- 		background: none;
- 		box-shadow: none; 
- }
 
 
 #contact{  
@@ -729,7 +862,7 @@ h2{
 
 
  form {
- 	width: 400px;	
+ 	width: 540px;	
  	margin: 0
 
   }
@@ -740,21 +873,22 @@ h2{
   	justify-content: space-around;
  	align-items: center;
  	margin: 15px 0;
+
   }
 
 .label2{
-	margin: 0 40px 0 0;
+	margin: 0 20px 0 0;
 }
 
  label input{
- 	width: 180px;
+ 	width: 260px;
 	height: 40px;
 	
  }
 
 
 .textte{
-	width: 400px;
+	width: 540px;
 	height: 200px;
 }
 
@@ -804,7 +938,7 @@ footer{
 }
 
 .fot-ab	> p {
-	font-size:15px;
+	font-size: 18px;
 	margin: 8px 0;
 }
 
@@ -821,16 +955,16 @@ footer{
 }
 
 .nav-foot > span{
-	font-size:15px;
+	font-size:18px;
 }
 
 .nav-foot > ul li {
-	font-size: 12px;
+	font-size: 15px;
 	padding: 1px;
-	margin: 2px;
+	margin: 0 10px 0 0;
 }
 .nav-foot > ul li a{
-	font-size: 12px
+	font-size: 15px
 
 }
 
@@ -852,88 +986,11 @@ footer{
 	font-size: 20px;
 }
 
-.foot-log > ul li i:hover{
-	font-size: 0;
-}
-
 	
 }	
 
-@media screen and (max-width: 500px){
 
-.about{
-	padding: 0 15px ;
-
-}
-
-.sub-about{		
-	font-size: 30px;
-	margin: 10px auto 10px auto;		
-}
-
-.nosotros{
-	font-size: 15px;
-}
-
-
-.fa-truck{
-	font-size: 40px;	
-}
-
-
-.sub-icon{
-	font-size: 12px;
-}
-
-form button{
-	width: 400px;
-	height: 20px;
-	font-size: 15px;
-}
-
-
-.fot-ab{
-	padding: 10px;
-	width:100%;
-}
-
-.fot-ab	> p {
-	font-size:15px;
-	margin: 8px 0;
-}
-
-
-.nav-foot {
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	
-}
-
-.nav-foot  ul {
-	display: flex;
-	flex-direction: row;
-}
-
-.nav-foot > span{
-	font-size: 18px;
-}
-
-.nav-foot > ul li {
-	font-size: 12px;
-	padding: 1px;
-	margin: 2px;
-}
-.nav-foot > ul li a{
-	font-size: 10px
-
-}
-
-
-}	
-
-
-@media screen and (max-width: 480px ){
+@media screen and (max-width: 500px ){
 
 
 
@@ -960,12 +1017,12 @@ h2{
 }
 
 .nosotros{
-	font-size: 10px;
+	font-size: 12px;
 }
 
 
 .fa-truck{
-	font-size: 80px;
+	font-size: 40px;
 	color: #9B9D9E;
 	margin: 10px;
 	
@@ -1025,7 +1082,7 @@ form button{
 
 .fot-ab{
 	padding: 10px;
-	width:100%;
+	width: 100%;
 }
 
 .fot-ab	> p {
@@ -1055,10 +1112,10 @@ form button{
 .nav-foot > ul li {
 	flex-direction: row;
 	font-size: 5px;
-	margin: 0px;
+	margin: 0 5px 0 0;
 }
 .nav-foot > ul li a{
-	font-size: 8px
+	font-size: 10px
 
 }
 
@@ -1098,23 +1155,7 @@ form button{
  	border-radius: 50%;
  }
 
-.safe{
-	margin-bottom: 5px; 
-	font-size: 10px;
-}
 
-
-  #services div {
-  	width: 250px;
-  	height: 200px;
-  	margin-bottom: 20px; 
-
-  }
-
-  #services div > p {
-  	font-size: 12px;
-  	
-  }
 
    }
 
