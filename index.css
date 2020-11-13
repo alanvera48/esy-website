@@ -88,6 +88,7 @@ h1{
     position: absolute;
     left: 20px;
     color: #eabb49;
+    cursor: pointer;
 }
 
 
@@ -156,8 +157,8 @@ h2{
 	font-weight: bold;
 	text-transform: uppercase;
 	text-shadow: rgba(0,0,0,0.5);
-	transform: translateX(-1000px);
-	transition: ease-in 0.2s;
+	transform: translateX(-100%);
+	transition: transform ease-in 0.2s;
 }
 
 
@@ -508,28 +509,40 @@ button:hover{
 
 /* Mensage */
 
-.mensage{
+.overlay{
 	position: fixed;
 	background: rgba(0, 0, 0, 0.3);
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	z-index: 2;
+	z-index: 1;
 	display: flex;
-	align-items: center;
 	justify-content: center;
-	display: none;
-	transition: ease-out 2s;
+	align-items: center;
+	visibility: hidden;
   }
+
+.overlay.active{
+	visibility: visible;
+}
 
 .popup{
 	background: rgba(7,10,16, 1);
 	box-shadow: 0px 0 5px 0 rgba(0, 0, 0, 0.8);
 	width: 500px;
+	min-width: 300px;
+	min-height: 150px;
 	height: 350px;
-	padding: 20px;
+	padding: 35px;
 	text-align: center;
+	transition: transform ease-out 0.5s;
+	transform: scale(0.1);
+}
+
+.popup.escala{
+	transform: scale(1);
+	
 }
 
 
@@ -539,7 +552,7 @@ button:hover{
 	line-height: 16px;
 	color: #817474;
 	display: block;
-	transition: 1s ease;
+	transition: color 1s ease;
 }
 
 .popup .btn-cerrar:hover{
@@ -551,11 +564,19 @@ button:hover{
 	height: 250px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	text-align: center;
 }
 
+.til-aler{
+	font-size: 25px;
+	color: #F8A31D;
+}
+
+.men-te p {
+	font-size: 18px;
+}
 
 
 /* Map */
@@ -1144,16 +1165,6 @@ form button{
 	font-size: 10px;
 
 }
-
- #services div{
- 	padding: 8px;
- }
-
- #services div > img{
- 	width: 100px;
- 	height: 100px;
- 	border-radius: 50%;
- }
 
 
 

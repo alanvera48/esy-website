@@ -1,3 +1,13 @@
+
+titleone = document.getElementById('titleone');
+
+window.onload = ()=>{
+	titleone.style.transform = ('translateX(0)');
+}
+
+
+
+
 var tog = document.getElementById('tog');
 var nav = document.getElementById('nav');
 var li = document.getElementById('link');
@@ -8,11 +18,6 @@ tog.onclick = ()=>{
 	tog.classList.toggle('tore');
 }
 
-titleone = document.getElementById('titleone');
-
-window.onload = ()=>{
-	titleone.style.transform = ('translateX(0)');
-}
 
 
 let animado = document.querySelectorAll(".animado");
@@ -33,12 +38,21 @@ function scrollMostrar(){
 
 window.addEventListener("scroll", scrollMostrar);
 
+
+
 send = document.getElementById('send');
 mensage = document.getElementById('mensage');
+popup =document.getElementById('popup');
 close = document.getElementById('btn-cerrar');
 
-send.onclick = ()=>{
-	mensage.style.display = ('block');
+send.addEventListener('click', function(){
+ mensage.classList.add('active');
+ popup.classList.add('escala');
 
+});
+
+close.addEventListener('click', function () {
+	popup.classList.remove('escala'); 
+	mensage.classList.remove('active');
 	
-}
+});

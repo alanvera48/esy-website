@@ -41,3 +41,64 @@
   	z-index: -1;
   	background: rgba(0, 0, 0, 0.70);
   }
+
+
+@media screen and (max-width: 1200px){
+
+form {
+ 	width:700px;	
+  }
+	
+}	
+
+
+
+@media screen and (max-width: 780px){
+
+.quote{  
+	flex-direction: column;
+	align-items: center;
+  }
+
+ 
+	
+}	
+
+
+@media screen and (max-width: 500px ){
+
+  h4{
+  	font-size: 20px;
+  }
+
+ form {
+ 	width: 300px;	
+ 	margin: 0
+  }
+
+  .name-dv, .num-div{
+ 	margin: 10px 0;
+  }
+
+.label2{
+	margin: 0 20px 0 0;
+}
+
+ label input{
+ 	width: 140px;
+	height: 30px;
+	
+ }
+
+
+.textte{
+	width:300px;
+	height: 180px;
+}
+
+form button{
+	width: 300px;
+}
+
+
+   }
